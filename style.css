@@ -1,0 +1,52 @@
+.bghColor {
+    background-color: hotpink;
+}
+
+img {
+
+    height: 100%;
+}
+
+.cardColor {
+    background-color: cadetblue;
+}
+
+.Cards {
+    background-color: dimgrey;
+    border: 10px solid black;
+}
+
+.movieCard figure {
+    margin: 0;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.IMGCard {
+    /* width:100%; */
+    height: 100%;
+    object-fit: cover;
+}
+
+.info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #615d5dcc;
+    color: hsl(0, 20%, 91%);
+    padding: 10px;
+    height: 70%;
+
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all .4s ease-in-out;
+
+    overflow-y: auto;
+}
+
+.movieCard:hover .info {
+    transform: translateY(0%);
+    opacity: 1;
+}
